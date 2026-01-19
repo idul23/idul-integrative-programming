@@ -1,0 +1,18 @@
+.click:hover {
+  background-color: pink;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+}
+.click {
+  background-color: antiquewhite;
+  color: aquamarine;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: blueviolet;
+  border-radius: 5px;
+  border-color: bisque;
+}
