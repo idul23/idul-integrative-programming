@@ -1,18 +1,158 @@
-.click:hover {
-  background-color: pink;
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
 }
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png");
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.grow {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #4a2c2a, #f093fb, #f5576c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.intro {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+
 .buttoncontainer {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
+
 .click {
-  background-color: antiquewhite;
-  color: aquamarine;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #fff;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
-  border-color: blueviolet;
-  border-radius: 5px;
-  border-color: bisque;
+  border: none;
+  border-radius: 40px;
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.click:hover {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.features {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.features:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.about h2,
+.features h2 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.8rem;
+  color: #1565c0;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #64b5f6;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.about p,
+.features ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features ul li {
+  background: #bbdefb;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.features ul li:hover {
+  background: #90caf9;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  margin-top: 40px;
 }
