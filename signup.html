@@ -3,22 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | GrowSmart</title>
+    <title>Sign Up | GrowSmart</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="hero small">
-      <h1>Login</h1>
-      <p>Welcome back to GrowSmart</p>
+      <h1>Create Account</h1>
+      <p>Join GrowSmart today</p>
     </header>
 
     <section class="form-container">
-      <div class="form-box" id="loginBox">
-        <form class="auth-form" id="authForm">
-          <h2>Login</h2>
+      <div class="form-box" id="signupBox">
+        <form class="auth-form" id="signupForm">
+          <h2>Sign Up</h2>
+
           <div class="input-box">
             <input type="email" placeholder="Email" required id="email" />
           </div>
+
           <div class="input-box">
             <input
               type="password"
@@ -27,12 +29,23 @@
               id="password"
             />
           </div>
-          <button type="button" class="click login-btn" id="loginBtn">
-            Login
+
+          <div class="input-box">
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              required
+              id="confirmPassword"
+            />
+          </div>
+
+          <button type="button" class="click signup-btn" id="signupBtn">
+            Create Account
           </button>
         </form>
+
         <p class="switch">
-          Don’t have an account? <a href="signup.html">Sign up</a>
+          Already have an account? <a href="login.html">Login</a>
         </p>
         <p class="switch">
           <a href="index.html">← Back to Home</a>
@@ -40,30 +53,28 @@
       </div>
 
       <div class="login-success-box" id="successBox">
-        <h2>Welcome Back!</h2>
+        <h2>Account Created!</h2>
         <div class="success-content">
           <p><strong>Email:</strong> <span id="userEmail"></span></p>
-          <p><strong>Password:</strong> <span id="userPassword"></span></p>
         </div>
       </div>
     </section>
 
     <script>
-      const loginBtn = document.getElementById("loginBtn");
-      const loginBox = document.getElementById("loginBox");
+      const signupBtn = document.getElementById("signupBtn");
+      const signupBox = document.getElementById("signupBox");
       const successBox = document.getElementById("successBox");
       const userEmail = document.getElementById("userEmail");
-      const userPassword = document.getElementById("userPassword");
 
-      loginBtn.addEventListener("click", () => {
+      signupBtn.addEventListener("click", () => {
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirmPassword").value;
 
-        if (email && password) {
+        if (email && password && password === confirmPassword) {
           userEmail.textContent = email;
-          userPassword.textContent = password;
-
-          loginBox.style.display = "none";
+          signupBox.style.display = "none";
           successBox.style.display = "block";
         }
       });
