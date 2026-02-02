@@ -1,7 +1,9 @@
 ﻿# idul-integrative-programming
 
 ##ACTIVITY 1
+
 🔹 Project Title:
+
 GrowSmart: Business Solutions for Success
 
 🔹 Description
@@ -35,6 +37,7 @@ What was the most challenging part?
 -From this activity, I learned how design choices like gradients, hover effects, and layout can shape the personality of a landing page and make it more engaging. The most challenging part was balancing uniqueness with simplicity—ensuring the page looked creative and modern without overwhelming the user experience.
 
 ACTIVITY 2
+
 🔹 Activity Name
 
 Login Page (Login | GrowSmart)
@@ -63,6 +66,7 @@ I used ChatGPT to help improve wording for the page description and organize the
 🔹 Learning Reflection (Short)
 
 From this activity, I learned how to structure login forms properly using HTML and style them for better user experience using CSS. The most challenging part was keeping the design clean and readable while maintaining consistency with the overall GrowSmart theme.
+
 
 
 
