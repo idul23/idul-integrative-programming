@@ -12,7 +12,9 @@ Explain:
 The GrowSmart landing page is a vibrant showcase of innovation, designed to inspire businesses to think bigger and act smarter. It speaks to entrepreneurs, startups, and forward‑thinking companies ready to transform ambition into measurable success. By blending creativity with practical strategy, GrowSmart solves the challenge of scaling sustainably while staying future‑ready. Its purpose is to guide organizations toward growth that is not only achievable, but enduring and impactful.
 
 🔹 Technologies Used
+
 HTML5
+
 CSS3
 
 🔹 Features
@@ -22,6 +24,7 @@ List at least 3 features of your landing page.
 -Story‑driven sections: Distinctly colored “About Us” and “Features” panels that feel like curated cards, each telling its own part of the brand journey.
 
 🔹 AI Assistance Disclosure (Required)
+
 Answer honestly:
 Did you use AI tools? Yes
 If YES, specify: I used ChatGPT to help generate CSS layout ideas and improve wording for the hero section.
@@ -29,6 +32,7 @@ What it helped you with
 -layout ideas, CSS styling, text content, debugging
 
 🔹 Learning Reflection (Short)
+
 Answer briefly:
 What did you learn from this activity?
 What was the most challenging part?
@@ -61,11 +65,13 @@ Navigation links to the Sign Up page and Home page
 Did you use AI tools? Yes
 
 If YES, specify:
+
 I used ChatGPT to help improve wording for the page description and organize the README documentation. All HTML and CSS code was created, reviewed, and modified by me.
 
 🔹 Learning Reflection (Short)
 
 From this activity, I learned how to structure login forms properly using HTML and style them for better user experience using CSS. The most challenging part was keeping the design clean and readable while maintaining consistency with the overall GrowSmart theme.
+
 
 
 
